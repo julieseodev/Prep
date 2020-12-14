@@ -1,4 +1,8 @@
-function plusFive(num) {
+// function plusFive(num) {
+//     return num + 5;
+// }
+
+const plusFive = (num) => {
     return num + 5;
 }
 

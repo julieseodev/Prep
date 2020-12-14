@@ -1,3 +1,8 @@
+// node filename - to run file (from Terminal)
+
+
+
+
 // data types
 // ----------
 // numbers

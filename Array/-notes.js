@@ -28,9 +28,7 @@ myNums; // [1,3,6,2,7,3,5,100]
 [1,2,3].length // 3
 
 
-// range
-// capWords
-// maxValue
-// sumArray
+
+// 
 // avgValue
 // wordPeriods

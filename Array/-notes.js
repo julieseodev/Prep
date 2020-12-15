@@ -29,6 +29,5 @@ myNums; // [1,3,6,2,7,3,5,100]
 
 
 
-// 
-// avgValue
+
 // wordPeriods

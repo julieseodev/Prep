@@ -3,7 +3,7 @@
         // square bracket with elements in it [ele, ele, ele...]
         // *** ordered
         
-    // Object { key: value, ...} ex) { 'name': 'julie', 'age':21, 'gender': 'female' }
+    // Object { key: value, ...} ex) { 'name': 'julie', 'age':21, 'gender': 'female' }  // obj['key]
         // key-value pair
         // instead of indexing with numbers, objects are indexed with keys (which are always strings)
         // *** unordered

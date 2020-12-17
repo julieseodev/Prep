@@ -59,7 +59,7 @@ function reverseWord2(word) {
 function reverseWord3(word) {
     let reversed = "";
     for (let i = 0; i < word.length; i++) {
-        reversed += word[i];
+        reversed += word[i] + reversed;
     }
     return reversed;
 }
@@ -96,7 +96,7 @@ console.log(luckySevens(22)); // [7,14,21]
 
 function copyMachine(ele, num) {
     let arr = [];
-    for (let i = 0; i < num; i++) {
+    for (let i = 0; i < num; i++) {     // for (let i = 1; i <= num; i++)
         // i = 0, 1, 2
         arr.push(ele);
     }

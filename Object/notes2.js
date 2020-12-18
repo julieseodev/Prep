@@ -60,7 +60,7 @@ for (let key in obj) {
 
 for (let key in obj) {
     console.log(key[0].toUpperCase() + key.slice(1).toLowerCase() + ": " + obj[key]);
-    // console.log(key.slice(0,1).toUpperCase() + key.slice(1).toLowerCase() + ": " + obj[key]);
+    // console.log(key.slice(0,1).toUpperCase() + key.slice(1).toLowerCase() + ": " + obj[key])
 
     // Name: Sam
     // Age: 25

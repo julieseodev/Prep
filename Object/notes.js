@@ -113,3 +113,6 @@ obj2['nickname'] === undefined // true
     // brute force
     // optimize (timely efficient)
 
+
+
+

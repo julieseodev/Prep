@@ -24,7 +24,7 @@ myNums; // [1,3,6,2,7,3,5,100]
 [1,2,3,4,5,6,7].slice(startIndex, endIndex) 
 // startIndex: inclusive
 // endIndex: exclusive
-[1,2,3,4,5,6,7].slice(2, 5) // [3,4]
+[1,2,3,4,5,6,7].slice(2, 5) // [3,4,5]
 [1,2,3].length // 3
 
 

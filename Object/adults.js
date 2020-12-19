@@ -19,6 +19,6 @@ let ppl = [
     { name: 'Bob', age: 45 },
     { name: 'Kate', age: 7 },
     { name: 'Peter', age: 18 }
-]
+];
 
 console.log(adults(ppl)); // ['John', 'Jim', 'Bob', 'Peter']

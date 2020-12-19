@@ -17,3 +17,8 @@ console.log(valuePair(object1, object2, 'name')); // ['One', 'Two']
 // let b = 'bye'
 
 // [a, b] => ['hi', 'bye']
+
+
+//문제가 머엿어  obj 두개 쓰고 키 쓰면 저러케 어떠케 나와
+// object는 key: value니까
+// key 를 사용해서 object에서 value를 찾을 수 있는거야

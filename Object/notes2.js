@@ -36,13 +36,24 @@ for (let key in obj) {
     console.log(key); // 'name', 'age', 'gender'
 }
 
-for (let key in obj) {
+for (let key in obj) { // iterating keys in the object
     console.log(obj[key]); // 'Sam', 25, 'male'
 }
 
-Object.keys(obj).forEach((key) => {
+Object.keys(obj).forEach((key) => { // iterating the array of keys from the object
 
 })
+
+// [key, key, key...].forEach((key) => {
+//
+// })
+
+// let keys = [key, key, key...];
+// for (let i = 0; i < keys.length; i++) {
+//
+// }
+
+
 
 for (let key in obj) {
     console.log(key + ": " + obj[key]);

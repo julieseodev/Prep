@@ -6,11 +6,11 @@ function pickTopStudent(grades) {
 
     for (let i = 0; i < grades.length; i++) {
         let gradeArr = grades[i];
-        let name = gradeArr[0];
+        let name = gradeArr[0];              // key
         let score = gradeArr[1];
         
-        if (stats[name] === undefined) {
-            stats[name] = score;
+        if (stats[name] === undefined) {     // value === undefined
+            stats[name] = score;             // value = score
         } else {
             stats[name] += score;
         }

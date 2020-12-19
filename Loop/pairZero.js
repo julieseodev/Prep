@@ -43,11 +43,6 @@ console.log(pairZero([0, 2, 5, -2, 7, -7])); // => [ [ 2, -2 ], [ 7, -7 ] ]
 // str[3] === "l"
 // {} <- new block of function or statements or to notate objects
 
-/*
-    
-    _____________
-    |___|___|___|
-    |___|___|___|
-*/
+
 
 

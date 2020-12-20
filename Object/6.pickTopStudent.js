@@ -5,16 +5,16 @@ function pickTopStudent(grades) {
     let stats = {}; // { sarah: 387, thomas: 32350, .... }
 
     for (let i = 0; i < grades.length; i++) {
-        let gradeArr = grades[i];
+        let gradeArr = grades[i];            // [[]]
         let name = gradeArr[0];              // key
         let score = gradeArr[1];
         
-        if (stats[name] === undefined) {     // value === undefined
+        if (stats[name] === undefined) {     // value === undefined  없으면
             stats[name] = score;             // value = score
-        } else {
+        } else {                             // 잇으면
             stats[name] += score;
         }
-    }
+    }                                        // stats = { sarah: 387, thomas: 32350, .... }
 
     let max = -Infinity;
     let topStudent = ""; 

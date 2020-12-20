@@ -1,4 +1,11 @@
-
+function organizeObj(arr) {
+    let obj = {};
+    for (let i = 0; i < arr.length; i++) {
+        let name = arr[i];
+        obj[name] = i + 1;
+    }
+    return obj;
+}
 
 
 console.log(organizeObj(['Kate', 'Debbie', 'Dave', 'Karen', 'Paul', 'Joe', 'Emma'])); 

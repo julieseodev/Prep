@@ -10,3 +10,7 @@ hipsterfy("towel flicker banana"); // => "towl flickr banan"
 hipsterfy("runner anaconda"); // => "runnr anacond"
 hipsterfy("turtle cheeseburger fries"); // => "turtl cheeseburgr fris"
 *******************************************************************************/
+
+function hipsterfy(sentence) {
+    
+}

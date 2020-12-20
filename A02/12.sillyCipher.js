@@ -11,3 +11,21 @@ sillyCipher("apple", { a : "c", p : "x"}) //=> 'cxx..'
 sillyCipher("bootcamp prep?", { o : "e", p : "q" , "?" : "!"}) //=> '.ee....q.q..q!'
 sillyCipher("twmce", { m : "n", t : "d", w : "a"}) //=> 'dan..''
 *******************************************************************************/
+
+function sillyCipher(sentence, cipher) {
+    let str = "";
+    for (let i = 0; i < sentence.length; i++) {
+        let char = sentence[i];
+        if (cipher[char] !== undefined) {
+            str += cipher[char];
+        } else if (cipher[char] === undefined) {
+            str += ".";
+        }
+    }
+    return str;
+}
+
+console.log(sillyCipher("apple" , { a : "c", p : "x", l : "r", e : "o"})); //=> 'cxxro'
+console.log(sillyCipher("apple", { a : "c", p : "x"})); //=> 'cxx..'
+console.log(sillyCipher("bootcamp prep?", { o : "e", p : "q" , "?" : "!"})); //=> '.ee....q.q..q!'
+console.log(sillyCipher("twmce", { m : "n", t : "d", w : "a"})); //=> 'dan..'

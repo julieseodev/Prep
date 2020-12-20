@@ -10,3 +10,7 @@ magicCipher("add me on facebook" , { a : "c", d : "q"}) => "cqq me on fccebook"
 magicCipher("where are you?" , { v : "l", '?' : "!"}) => "where are you!"
 magicCipher("twmce" , { m : "n", t : "d", w : "a"}) => "dance"
 *******************************************************************************/
+
+function magicCipher(sentence, cipher) {
+    
+}

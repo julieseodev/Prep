@@ -16,7 +16,7 @@ function arrayBuilder(count) {
     let arr = [];
     for (let key in count) {
         // key = 'cats'
-        for (let i = 1; i <= count[key]; i++) {
+        for (let i = 1; i <= count[key]; i++) {     // for (let i = 0; i < count[key]; i++)
             // console.log("key:", key)
             // console.log("value:", count[key])
             arr.push(key);

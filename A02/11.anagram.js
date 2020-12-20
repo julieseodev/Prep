@@ -27,10 +27,8 @@ function anagram(str1, str2) {
         }
     }
 
-    // console.log(obj);
     return true;
 }
-
 
 console.log(anagram('race', 'care')) // true
 console.log(anagram('racee', 'care')) // false

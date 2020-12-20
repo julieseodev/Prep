@@ -1,7 +1,7 @@
-function organizeObj(members) {
+function organizeObj(obj) {
     let arr = [];
-    for (let name in members) {
-        let i = members[name] - 1;
+    for (let name in obj) {
+        let i = obj[name] - 1;
         arr[i] = name;
     }
     return arr;

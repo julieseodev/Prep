@@ -15,6 +15,8 @@ function titleize(title, stopWords) {
     let result = [];
     for (i = 0; i < sentence.length; i++) {
         let word = sentence[i];
+        // console.log('word ', word)
+
         if (stopWords.includes(word)) {
             result.push(word.toLowerCase());
         } else {

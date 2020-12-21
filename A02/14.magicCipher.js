@@ -12,5 +12,18 @@ magicCipher("twmce" , { m : "n", t : "d", w : "a"}) => "dance"
 *******************************************************************************/
 
 function magicCipher(sentence, cipher) {
-    
+    let newSentence = "";
+    for (let i = 0; i < sentence.length; i++) {
+        let char = sentence[i];
+        if (cipher[char] !== undefined) {
+            newSentence += cipher[char];
+        } else if (cipher[char] === undefined) {
+            newSentence += char;
+        }
+    }
+    return newSentence;
 }
+
+console.log(magicCipher("add me on facebook" , { a : "c", d : "q"})); // => "cqq me on fccebook"
+console.log(magicCipher("where are you?" , { v : "l", '?' : "!"})); // => "where are you!"
+console.log(magicCipher("twmce" , { m : "n", t : "d", w : "a"})); // => "dance"

@@ -18,7 +18,7 @@ function sillyCipher(sentence, cipher) {
         let char = sentence[i];
         if (cipher[char] !== undefined) {
             str += cipher[char];
-        } else if (cipher[char] === undefined) {
+        } else if (cipher[char] === undefined) {    // else
             str += ".";
         }
     }

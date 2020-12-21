@@ -17,7 +17,7 @@ function magicCipher(sentence, cipher) {
         let char = sentence[i];
         if (cipher[char] !== undefined) {
             newSentence += cipher[char];
-        } else if (cipher[char] === undefined) {
+        } else if (cipher[char] === undefined) {        // else
             newSentence += char;
         }
     }

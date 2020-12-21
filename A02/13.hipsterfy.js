@@ -12,5 +12,9 @@ hipsterfy("turtle cheeseburger fries"); // => "turtl cheeseburgr fris"
 *******************************************************************************/
 
 function hipsterfy(sentence) {
-    
+    let arr = sentence.split(' ');
+    for (let i = 0; i < arr.length; i++) {
+        let vowel = 'aeiou'
+        
+    }
 }

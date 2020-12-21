@@ -13,5 +13,21 @@ valueConcat(['a', 'b', 'c'], {b: 2, c: 3})
 *******************************************************************************/
 
 function valueConcat(array, obj) {
-    // your code here...
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        let name = array[i];
+        if (obj[name] !== undefined) {
+            newArray.push(name + obj[name]);
+        } if (obj[name] === undefined) {
+            newArray.push(name);
+        }
+    }
+    return newArray;
 }
+
+
+console.log(valueConcat(['alex', 'maurice', 'meagan', 'ali'], {alex: 'bronca', ali: 'harris'})); 
+// => [ 'alexbronca', 'maurice', 'meagan', 'aliharris' ]
+
+console.log(valueConcat(['a', 'b', 'c'], {b: 2, c: 3}));
+// => [ 'a', 'b2', 'c3' ]

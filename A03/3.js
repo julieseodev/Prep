@@ -23,11 +23,11 @@ reverse2D(arr2) => 'PatrickOscarMikeMattJulian'
 
 function reverse2D(array) {
   let str = "";
-  for (let i = array.length - 1; i >= 0; i--) {
+  for (let i = array.length - 1; i >= 0; i--) { 
     let innerArray = array[i];
     
-    for (let i = innerArray.length - 1; i >= 0; i--) {
-      str += innerArray[i];
+    for (let j = innerArray.length - 1; j >= 0; j--) { 
+      str += innerArray[j];
     }
     
   }

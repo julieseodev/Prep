@@ -17,7 +17,7 @@ function snakeToCamel(str) {
     let arr = str.split('_');
     for (let i = 0; i < arr.length; i++) {
         let word = arr[i];
-        let newWord = word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
+        let newWord = word[0].toUpperCase() + word.slice(1).toLowerCase(); 
         newStr += newWord;
     }
     return newStr;

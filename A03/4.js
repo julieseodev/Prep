@@ -17,17 +17,18 @@ highestScore(students); //=> 'TD2'
 *******************************************************************************/
 
 function highestScore(students) {
-    let highestStudent = {score: -Infinity};
+    let highestStudent = { score: -Infinity };
     for (let i = 0; i < students.length; i++) {
         let student = students[i];
         if (student.score > highestStudent.score) {
             highestStudent = student;
         }
-        
     }
-    let initial = "";
-    let arr = highestStudent.name.split(' ');
-    initial = arr[0][0] + arr[1][0] + highestStudent.id
+    // let initial = "";
+    // initial = nameArr[0][0] + nameArr[1][0] + highestStudent.id
+    let nameArr = highestStudent.name.split(' ');
+    let initial = nameArr[0][0] + nameArr[1][0] + highestStudent.id
+
     return initial;
 }
 

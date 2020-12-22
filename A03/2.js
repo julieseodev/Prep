@@ -14,7 +14,9 @@ function variableNameify(words) {
     let combined = words[0].toLowerCase();
     for (let i = 1; i < words.length; i++) {
         let word = words[i];
-        combined += word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
+        // combined += word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
+        combined += word[0].toUpperCase() + word.slice(1).toLowerCase(); 
+
     }
     return combined;
 }

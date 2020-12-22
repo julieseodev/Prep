@@ -24,10 +24,9 @@ function sum2DArray(array) {
   let sum = 0;
   for (let i = 0; i < array.length; i++) {
     let innerArray = array[i];
-    for (let i = 0; i < innerArray.length; i++) {
-      let num = innerArray[i];
-      sum += num;
-    }
+    for (let j = 0; j < innerArray.length; j++) {
+      let num = innerArray[j];
+      sum += num;  
   }
   return sum;
 }

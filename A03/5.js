@@ -11,3 +11,19 @@ snakeToCamel('say_hello_world'); // => 'SayHelloWorld'
 snakeToCamel('bootcamp_prep_is_cool'); // => 'BootcampPrepIsCool'
 snakeToCamel('BOOtcamp_PREP_iS_cOol'); // => 'BootcampPrepIsCool'
 *******************************************************************************/
+
+function snakeToCamel(str) {
+    let newStr = "";
+    let arr = str.split('_');
+    for (let i = 0; i < arr.length; i++) {
+        let word = arr[i];
+        let newWord = word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
+        newStr += newWord;
+    }
+    return newStr;
+}
+
+console.log(snakeToCamel('snakes_go_hiss')); // => 'SnakesGoHiss'
+console.log(snakeToCamel('say_hello_world')); // => 'SayHelloWorld'
+console.log(snakeToCamel('bootcamp_prep_is_cool')); // => 'BootcampPrepIsCool'
+console.log(snakeToCamel('BOOtcamp_PREP_iS_cOol')); // => 'BootcampPrepIsCool'

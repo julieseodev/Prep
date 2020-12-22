@@ -9,3 +9,16 @@ variableNameify(['is', 'prime']) => 'isPrime'
 variableNameify(['remove', 'last', 'vowel']) => 'removeLastVowel'
 variableNameify(['MaX', 'VALUE']) => 'maxValue'
 *******************************************************************************/
+
+function variableNameify(words) {
+    let combined = words[0].toLowerCase();
+    for (let i = 1; i < words.length; i++) {
+        let word = words[i];
+        combined += word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
+    }
+    return combined;
+}
+
+console.log(variableNameify(['is', 'prime'])); // => 'isPrime'
+console.log(variableNameify(['remove', 'last', 'vowel'])); // => 'removeLastVowel'
+console.log(variableNameify(['MaX', 'VALUE'])); // => 'maxValue'

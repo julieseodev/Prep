@@ -143,7 +143,7 @@ function removeVowel(word) {
 
     let consonants = "";
     for (let i = 0; i < word.length; i++) {
-        let char = words[i];
+        let char = word[i];
         if (vowels.indexOf(char) < 0) {
             consonants += char;
         }

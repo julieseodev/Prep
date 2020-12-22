@@ -23,10 +23,14 @@ sum2DArray(arr2); // => 3
 function sum2DArray(array) {
   let sum = 0;
   for (let i = 0; i < array.length; i++) {
-    let innerArray = array[i];
-    for (let j = 0; j < innerArray.length; j++) {
-      let num = innerArray[j];
+    // let innerArray = array[i];
+    // for (let j = 0; j < innerArray.length; j++) {
+    for (let j = 0; j < array[i].length; j++) {
+      // let num = innerArray[j];
+      let num = array[i][j]; 
+
       sum += num;  
+    }
   }
   return sum;
 }

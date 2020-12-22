@@ -47,6 +47,21 @@ let dog2 = { 'name':'Peter', 'type':'Husky', 'age':8 };
 
 
 
+> obj = { name: "Chris" }
+{ name: 'Chris' }
+> obj.name
+'Chris'
+> obj["name"]
+'Chris'
+> obj[name] // no good
+Uncaught ReferenceError: name is not defined
+> // javascript is looking for a varaible called name not the key 'name'
+not the key 'name'
+undefined
+> let banana = "name"
+undefined
+> obj[banana]
+'Chris'
 
 
 

@@ -14,24 +14,27 @@ laligatArray([1, 2, 3, 4, 5]); // => [ 0, 2, 5, 5, 10 ]
 
 function laligatArray(array) {
   let laligat = [];
-
   for (let i = 0; i < array.length; i++) {
-    
-    for (let j = 0; j < array[i].length; j++) {
-
+    let sum = 0;
+    for (let j = 2; j <= array[i]; j++) {
+        if (isPrime(j)) {
+        sum += j;
+        laligat.push(sum);
+        }  
     }
   }
+  return laligat;
 }
   
 
-//   function isPrime(number) {
-//     if (number < 2) {
-//         return false;
-//     }
-//     for (let i = 2; i < number; i++) {
-//          if (number % i === 0) {
-//              return false;
-//          }
-//     }
-//     return true;
-//  }
+function isPrime(number) {
+   if (number < 2) {
+       return false;
+   }
+   for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+           return false;
+        }
+   }
+   return true;
+}

@@ -22,5 +22,23 @@ result2; // => [ 2, 4, 8 ]
 *******************************************************************************/
 
 function mySelect(arr, cb) {
-    
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (cb(arr[i])) {
+          result.push(arr[i]);
+        }
+    }
+    return result;
   }
+
+function isUpper(str) {
+  return str.toUpperCase() === str;
+}
+  
+function isEven(n) {
+  return n % 2 === 0;
+}
+
+console.log(mySelect(['BOOTCAMP', 'prep', 'iS', 'COOL'], isUpper)); // => [ 'BOOTCAMP', 'COOL' ]
+
+console.log(mySelect([1, 2, 4, 7, 8], isEven)); // => [ 2, 4, 8 ]

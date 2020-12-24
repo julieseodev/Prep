@@ -24,8 +24,9 @@ result2; // => [ 2, 4, 8 ]
 function mySelect(arr, cb) {
     let result = [];
     for (let i = 0; i < arr.length; i++) {
-        if (cb(arr[i])) {
-          result.push(arr[i]);
+        let ele = arr[i];
+        if (cb(ele, i, arr)) { // cb(arr[i]
+          result.push(ele); // result.push(arr[i]);
         }
     }
     return result;

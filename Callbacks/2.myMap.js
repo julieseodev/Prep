@@ -18,12 +18,13 @@ myMap([2, 4, 6, 6], multiply); // => [ 0, 4, 12, 18 ]
 
 function myMap(arr, cb) {
     let result = [];
+
     for (let i = 0; i < arr.length; i++) {
       let ele = arr[i];
-      if (cb(ele, i, arr)) {
-        result.push();
+      let newEle = cb(ele, i, arr);
+      result.push(newEle);
       }
-    }
+    
     return result;
   }
 

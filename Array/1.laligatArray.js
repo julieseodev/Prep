@@ -19,9 +19,9 @@ function laligatArray(array) {
     for (let j = 2; j <= array[i]; j++) {
         if (isPrime(j)) {
         sum += j;
-        laligat.push(sum);
         }  
     }
+    laligat.push(sum);
   }
   return laligat;
 }
@@ -33,8 +33,11 @@ function isPrime(number) {
    }
    for (let i = 2; i < number; i++) {
         if (number % i === 0) {
-           return false;
+            return false;
         }
    }
    return true;
 }
+
+console.log(laligatArray([10, 11, 20, 15])); // => [ 17, 28, 77, 41 ]
+console.log(laligatArray([1, 2, 3, 4, 5])); // => [ 0, 2, 5, 5, 10 ]

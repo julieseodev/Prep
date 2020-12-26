@@ -10,6 +10,15 @@ bigramArray('bigrams are very useful') => [ 'bigrams are', 'are very', 'very use
 *******************************************************************************/
 
 function bigramArray(sentence) {
-  // your code here...
+  let newArr = [];
+  let arr = sentence.split(' ');
+
+  for (let i = 0; i < arr.length - 1; i++) {    // 마지막까지 안가
+    newArr.push(arr[i] + ' ' + arr[i + 1]);
+
+  }
+  return newArr;
 }
 
+console.log(bigramArray('today is a great day')); // => [ 'today is', 'is a', 'a great', 'great day' ]
+console.log(bigramArray('bigrams are very useful')); // => [ 'bigrams are', 'are very', 'very useful' ]

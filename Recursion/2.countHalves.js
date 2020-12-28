@@ -23,3 +23,30 @@ countHalves(100); prints
 1.5625
 done!
 ******************************************************************************/
+
+function countHalves(n) {
+    if (n < 1) {
+        console.log('done!');
+    } else {
+        console.log(n);
+        countHalves(n / 2);
+    }
+}
+
+
+countHalves(20); 
+// 20
+// 10
+// 5
+// 2.5
+// 1.25
+// done!
+countHalves(100); 
+// 100
+// 50
+// 25
+// 12.5
+// 6.25
+// 3.125
+// 1.5625
+// done!

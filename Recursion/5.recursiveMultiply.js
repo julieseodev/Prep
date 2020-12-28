@@ -7,3 +7,16 @@
 // multiply(3, 5); => 15
 // multiply(6, 4); => 24
 // multiply(0, 100); => 0
+
+function multiply(a, b) {
+    if (a === 0) {
+        return 0;
+    } else {
+        let result = b + multiply(a - 1, b);
+        return result;
+    }
+}
+
+console.log(multiply(3, 5)); // => 15
+console.log(multiply(6, 4)); // => 24
+console.log(multiply(0, 100)); // => 0

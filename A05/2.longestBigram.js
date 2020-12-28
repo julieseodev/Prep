@@ -13,9 +13,18 @@ longestBigram("his last assessment is fun"); // => 'last assessment'
 *******************************************************************************/
 
 function longestBigram(sentence) {
-  // your code here...
+  let arr = sentence.split(' ');
+  let longest = 0;
+  for (let i = 0; i < arr.length - 1; i++) {
+    longest = Math.max(arr[i].length + arr[i + 1].length, longest);
 
+    }
+  }
+  
 }
 
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
-module.exports = longestBigram;
+
+console.log(longestBigram('measure twice cut once')); // => 'measure twice'
+console.log(longestBigram("One must have a mind of winter")); // => 'must have'
+console.log(longestBigram("go home to eat")); // => 'go home'
+console.log(longestBigram("his last assessment is fun")); // => 'last assessment'

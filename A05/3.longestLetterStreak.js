@@ -18,9 +18,7 @@ longestLetterStreak("YYYYY", ["Z", "K", "Y"]); // => 5
 *******************************************************************************/
 
 function longestLetterStreak(str, searchLetters) {
-  // your code here...
+  
 
 }
 
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
-module.exports = longestLetterStreak;

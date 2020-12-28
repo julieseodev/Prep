@@ -14,13 +14,18 @@ longestBigram("his last assessment is fun"); // => 'last assessment'
 
 function longestBigram(sentence) {
   let arr = sentence.split(' ');
-  let longest = 0;
+  let longestBigram = "";
   for (let i = 0; i < arr.length - 1; i++) {
-    longest = Math.max(arr[i].length + arr[i + 1].length, longest);
-
+    // currBigram is a bigram string 
+    let currBigram = arr[i] + ' ' + arr[i + 1];
+    
+    // compare the lengths of two strings: longestBigram and currBigram
+    // then reassign longestBigram if currBigram is longer
+    if (currBigram.length > longestBigram.length) {
+      longestBigram = currBigram;
     }
   }
-  
+  return longestBigram; 
 }
 
 

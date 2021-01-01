@@ -21,18 +21,32 @@
 // var arr4 = 4, 6, 8, 10;
 // smallestPrime(arr4); => null
 
+// function smallestPrime(array) {
+//     let smallest = Infinity;
+//     for (let i = 0; i < array.length; i++) {
+//         let num = array[i];
+//         if (isPrime(num) && num < smallest) {
+//             smallest = num;                            
+//         }
+//     }
+
+//     if (smallest === Infinity) {
+//         return null;
+//     } 
+//     return smallest;
+// }
+
 function smallestPrime(array) {
-    let minPrime = null;
-    
+    let smallest = null;
     for (let i = 0; i < array.length; i++) {
         let num = array[i];
-        if (isPrime(num) && (minPrime === null || num < minPrime)) {
-            minPrime = num;
-            
+        if (isPrime(num) && (smallest === null || num < smallest)) {
+            smallest = num;
         }
     }
-    return minPrime;
+    return smallest;
 }
+
 
 function isPrime(num) {
     if (num < 2) {
@@ -45,6 +59,7 @@ function isPrime(num) {
     }
     return true;
 }
+
 
 
 var arr1 = [6, 7, 12, 11, 5, 4];

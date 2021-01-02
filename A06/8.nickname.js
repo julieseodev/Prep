@@ -15,12 +15,9 @@ function nickname(name) {
         if(vowels.includes(name[i])) {
             vowelCount += 1;
         }
-        
         if (vowels.includes(name[i]) && vowelCount === 2) {
             return name.slice(0, i + 1).toUpperCase() + "-" + name.slice(0, i + 1).toUpperCase();
         }  
-        
-        
     }
 }
 

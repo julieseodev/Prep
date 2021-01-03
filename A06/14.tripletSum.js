@@ -6,20 +6,21 @@
 // tripletSum(arr1, 8); => [  1, 3, 4 ,  1, 5, 2  ]
 
 function tripletSum(array, sum) {
-    let output = [];
+    let triplets = [];
     for (let i = 0; i < array.length; i++) {
         let num1 = array[i];
-        for (let j = 0; j < array.length; j++) {
+        for (let j = i + 1; j < array.length; j++) {
             let num2 = array[j];
-            for (let k = 0; k < array.length; k++) {
-                let num3 = array[j];
+            for (let k = j + 1; k < array.length; k++) { // ensure that k is never what j was previously
+                let num3 = array[k];
+                
                 if (num1 + num2 + num3 === sum) {
-                output.push([num1, num2, num3]);
+                triplets.push([num1, num2, num3]);
                 }
             }
         }
     }
-    return output;
+    return triplets;
 }
 
 

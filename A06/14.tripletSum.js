@@ -4,3 +4,24 @@
 // Example:
 // var arr1 = 1, 3, 5, 2, 4;
 // tripletSum(arr1, 8); => [  1, 3, 4 ,  1, 5, 2  ]
+
+function tripletSum(array, sum) {
+    let output = [];
+    for (let i = 0; i < array.length; i++) {
+        let num1 = array[i];
+        for (let j = 0; j < array.length; j++) {
+            let num2 = array[j];
+            for (let k = 0; k < array.length; k++) {
+                let num3 = array[j];
+                if (num1 + num2 + num3 === sum) {
+                output.push([num1, num2, num3]);
+                }
+            }
+        }
+    }
+    return output;
+}
+
+
+var arr1 = [1, 3, 5, 2, 4];
+console.log(tripletSum(arr1, 8)); // => [ [1, 3, 4] ,  [1, 5, 2] ]

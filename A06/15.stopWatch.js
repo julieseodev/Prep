@@ -5,15 +5,26 @@
 // be greater than 59. How can we use modulo % to accomplish this?
 
 function stopWatch(totalSeconds) {
-    let time = "";
     let hr = Math.floor(totalSeconds / 3600);
-        
-    let min = Math.floor((totalSeconds - (hr * 3600)) / 60);
-        
+        if (hr < 10) {
+            hr = '0' + hr;
+        }
+    let min = Math.floor((totalSeconds - (hr * 3600)) / 60);    
+        if (min < 10) {
+            min = '0' + min;
+        }
     let sec = totalSeconds - hr * 3600 - min * 60;
-        
-    return time = hr + ":" + min + ":" + sec;
+        if (sec < 10) {
+            sec = '0' + sec;
+        }
+    return hr + ":" + min + ":" + sec;
 }
+
+
+// let sec = totalSeconds % 60;
+// let min = Math.floor(totalSeconds / 60) % 60;
+// let hr = Math.floor(totalSeconds / 3600);
+
 
 console.log(stopWatch(0)); // => '00:00:00'
 console.log(stopWatch(4)); // => '00:00:04'

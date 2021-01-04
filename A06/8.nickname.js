@@ -10,15 +10,17 @@
 function nickname(name) {
     let vowels = 'aeiou';
     let vowelCount = 0;
+
     for (let i = 0; i < name.length; i++) {
         
         if(vowels.includes(name[i])) {
             vowelCount += 1;
         }
-        if (vowels.includes(name[i]) && vowelCount === 2) {
+        if (vowelCount === 2) {
             return name.slice(0, i + 1).toUpperCase() + "-" + name.slice(0, i + 1).toUpperCase();
         }  
     }
+    return name.toUpperCase() + "-" + name.toUpperCase();
 }
 
 console.log(nickname('manuel')); // => 'MANU-MANU'

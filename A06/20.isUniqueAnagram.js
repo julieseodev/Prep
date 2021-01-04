@@ -4,10 +4,30 @@
 // Assume there will be no repeated characters in each input string.
 
 function isUniqueAnagram(word1, word2) {
-    
+    let obj = {};
+    for (let i = 0; i < word1.length; i++) {
+        let char1 = word1[i];
+        if (obj[char1] === undefined) {
+            obj[char1] = 1;
+        } else {
+            obj[char1] += 1;
+        }
+    }
+    for (let i = 0; i < word2.length; i++) {
+        let char2 = word2[i];
+        if (obj[char2] >= 1) {
+            obj[char2] -= 1;
+        } else {
+            return false;
+        }
+    }
+    for (let char in obj) {
+        if (obj[char] !== 0) {
+            return false;
+        }
+    }
+    return true;
 }
-
-
 
 
 console.log(isUniqueAnagram('iceman', 'cinema')); // => true

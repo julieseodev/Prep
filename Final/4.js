@@ -36,4 +36,5 @@ var names = [
   'Kurstie Ozuna',
   'Matt Haws'
 ];
+
 console.log(usernames(names)); // => [ 'oalvarez', 'dcatalano', 'kozuna', 'mhaws' ]

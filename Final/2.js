@@ -18,5 +18,6 @@ function reverseString(str) {
     return newStr;
 }
 
+
 console.log(reverseString('taco'));        // => 'ocat'
 console.log(reverseString('hello world')); // => 'dlrow olleh'

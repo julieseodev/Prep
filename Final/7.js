@@ -18,7 +18,13 @@ Difficulty: Medium
 *************************************************************************************/
 
 function shoppingCartCost(cart, prices) {
-    
+    let total = 0;
+    for (let food in cart) {
+        let quantity = cart[food];
+        let price = prices[food];
+        total += quantity * price;
+    }
+    return total;
 }
 
 var prices = {bread: 4, butter: 6, milk: 3, eggs: 7, celery: 1};

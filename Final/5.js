@@ -14,3 +14,20 @@ isPowerOfTwo(-8); // => false
 
 Difficulty: Medium
 *************************************************************************************/
+
+function isPowerOfTwo(num) {
+    while (num >= 1) {
+        if (num === 1) {
+            return true;
+        }
+        num /= 2; // num = num / 2
+    }
+    
+    return false;
+}
+
+console.log(isPowerOfTwo(1));  // => true
+console.log(isPowerOfTwo(32)); // => true
+console.log(isPowerOfTwo(12)); // => false
+console.log(isPowerOfTwo(33)); // => false
+console.log(isPowerOfTwo(-8)); // => false

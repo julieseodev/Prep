@@ -17,3 +17,9 @@ areCoprime(15, 5);  // => false
 
 Difficulty: Medium
 *************************************************************************************/
+
+function areCoprime(num1, num2) {
+  
+}
+
+

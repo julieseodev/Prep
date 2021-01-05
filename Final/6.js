@@ -19,7 +19,23 @@ Difficulty: Medium
 *************************************************************************************/
 
 function areCoprime(num1, num2) {
-  
+  for (let i = 2; i <= num1; i++) {
+    if (num1 % i === 0 && num2 % i === 0) {
+      return false;
+    }
+  }
+  // i = 2 ~ x
+
+  // false case
+  // num1 % i === 0 (divisible)
+  // num2 % i === 0 (divisible)
+
+  // true
+  return true;
 }
 
-
+console.log(areCoprime(16, 25)); // => true
+console.log(areCoprime(15, 14)); // => true
+console.log(areCoprime(14, 21)); // => false
+console.log(areCoprime(15, 6));  // => false
+console.log(areCoprime(15, 5));  // => false

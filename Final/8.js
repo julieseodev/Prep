@@ -1,3 +1,4 @@
+
 /**************************************************************************************
 Write a function `pyramidScheme(base)` that takes in an array of numbers representing
 the base of a pyramid. The function should return a two-dimensional array representing
@@ -42,3 +43,41 @@ Hint:
 
 Difficulty: Hard
 *************************************************************************************/
+
+function pyramidScheme(base) { // [2, 3, 7, 5, 9]
+  let pyramid = [base]; // [[ 5, 10, 12, 14 ], [2, 3, 7, 5, 9]]
+
+  while (pyramid.length < base.length) { // 4 < 5
+    let prevLevel = pyramid[0];
+    let nextLevel = [];
+    
+    for (let i = 0; i < prevLevel.length - 1; i++) {
+      nextLevel.push(prevLevel[i] + prevLevel[i + 1])
+    }
+    
+    // nextLevel = [5, 10, 12, 14]
+    pyramid.unshift(nextLevel);
+  }
+
+  return pyramid;
+}
+
+console.log(pyramidScheme([2, 3, 7, 5, 9]));
+
+//  [
+//    [ 85 ],
+//    [ 37, 48 ],
+//    [ 15, 22, 26 ],
+//    [ 5, 10, 12, 14 ],
+//    [ 2, 3, 7, 5, 9 ]
+//  ]
+
+console.log(pyramidScheme([2, 2, 2, 2]));
+
+//  [
+//    [ 16 ],
+//    [ 8, 8 ],
+//    [ 4, 4, 4 ],
+//    [ 2, 2, 2, 2 ]
+//  ]
+

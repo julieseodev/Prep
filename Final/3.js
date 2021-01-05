@@ -21,5 +21,6 @@ function negativeSum(array) {
     return sum;
 }
 
+
 console.log(negativeSum([-3, 12, -5, -2, 3])); // => -10
 console.log(negativeSum([2, 1, 7]));           // => 0
